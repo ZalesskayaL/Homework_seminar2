@@ -1,0 +1,15 @@
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\HW_S2\Homework_seminar2\seminar_06122022\obj\Debug\net6.0\seminar_06122022.csproj.AssemblyReference.cache
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\HW_S2\Homework_seminar2\seminar_06122022\obj\Debug\net6.0\seminar_06122022.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\HW_S2\Homework_seminar2\seminar_06122022\obj\Debug\net6.0\seminar_06122022.AssemblyInfoInputs.cache
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\HW_S2\Homework_seminar2\seminar_06122022\obj\Debug\net6.0\seminar_06122022.AssemblyInfo.cs
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\HW_S2\Homework_seminar2\seminar_06122022\obj\Debug\net6.0\seminar_06122022.csproj.CoreCompileInputs.cache
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\HW_S2\Homework_seminar2\seminar_06122022\bin\Debug\net6.0\seminar_06122022.exe
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\HW_S2\Homework_seminar2\seminar_06122022\bin\Debug\net6.0\seminar_06122022.deps.json
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\HW_S2\Homework_seminar2\seminar_06122022\bin\Debug\net6.0\seminar_06122022.runtimeconfig.json
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\HW_S2\Homework_seminar2\seminar_06122022\bin\Debug\net6.0\seminar_06122022.dll
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\HW_S2\Homework_seminar2\seminar_06122022\bin\Debug\net6.0\seminar_06122022.pdb
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\HW_S2\Homework_seminar2\seminar_06122022\obj\Debug\net6.0\seminar_06122022.dll
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\HW_S2\Homework_seminar2\seminar_06122022\obj\Debug\net6.0\refint\seminar_06122022.dll
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\HW_S2\Homework_seminar2\seminar_06122022\obj\Debug\net6.0\seminar_06122022.pdb
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\HW_S2\Homework_seminar2\seminar_06122022\obj\Debug\net6.0\seminar_06122022.genruntimeconfig.cache
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\HW_S2\Homework_seminar2\seminar_06122022\obj\Debug\net6.0\ref\seminar_06122022.dll
