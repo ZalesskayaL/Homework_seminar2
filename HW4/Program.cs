@@ -5,6 +5,25 @@
 
 2, 4 -> 16
 */
+
+int Grade(int num1, int num2)
+{
+    int res = 1;
+
+    for(int i = 1; i <= num2; i++)
+    {
+        res = num1 * res;
+    }
+return res;
+}
+
+Console.Write("Введите число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите степень, в которую число возвести: ");
+int b = Convert.ToInt32(Console.ReadLine());
+int result = Grade(a, b);
+Console.Write($"Число {a} в степени {b} = {result}");
+
 /*
 Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 
