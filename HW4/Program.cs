@@ -34,10 +34,35 @@ Console.Write($"Число {a} в степени {b} = {result}");
 
 9012 -> 12
 */
-
-
-
-
+/*
+void SumNumber (string numString)
+{
+    int numberInt = Convert.ToInt32(numString);
+    int length = numString.Length;
+    int [] Array = new int [length];
+    double len = Convert.ToDouble(length);
+    double numberDoble = Convert.ToDouble(numString);
+    double a = 10;
+    double c = 0;
+    int sum = 0;
+    for (int i = 0; i < length; i++)
+    {
+        a = Math.Pow(10, i);
+        int b = Convert.ToInt32(a);
+        c = Math.Pow(10, i + 1);
+        int d = Convert.ToInt32(c); 
+        Array [i] = numberInt % d / b ;
+    }
+    for (int x = 0; x < length; x++)
+    {
+        sum = sum + Array[x];
+    }
+    Console.WriteLine($"Сумма цифр числа {numberInt} равна {sum}");
+}
+Console.Write("Введите число: ");
+string input = Console.ReadLine();
+SumNumber(input);
+*/
 /*
 Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 
@@ -46,6 +71,7 @@ Console.Write($"Число {a} в степени {b} = {result}");
 6, 1, 33 -> [6, 1, 33]
 */
 
+/*
 void CreateArray(int size)
 {
     int [] array = new int [size];
@@ -63,3 +89,5 @@ void CreateArray(int size)
 Console.Write("Введите, сколько будет элементов в массиве: ");
 int sizeArray = Convert.ToInt32(Console.ReadLine());
 CreateArray(sizeArray);
+
+*/
