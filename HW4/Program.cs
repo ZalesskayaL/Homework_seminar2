@@ -5,7 +5,7 @@
 
 2, 4 -> 16
 */
-
+/*
 int Grade(int num1, int num2)
 {
     int res = 1;
@@ -23,6 +23,7 @@ Console.Write("Введите степень, в которую число во�
 int b = Convert.ToInt32(Console.ReadLine());
 int result = Grade(a, b);
 Console.Write($"Число {a} в степени {b} = {result}");
+*/
 
 /*
 Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
@@ -33,6 +34,10 @@ Console.Write($"Число {a} в степени {b} = {result}");
 
 9012 -> 12
 */
+
+
+
+
 /*
 Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 
@@ -40,3 +45,21 @@ Console.Write($"Число {a} в степени {b} = {result}");
 
 6, 1, 33 -> [6, 1, 33]
 */
+
+void CreateArray(int size)
+{
+    int [] array = new int [size];
+    for (int i = 0; i < size; i++)
+    {
+        Console.Write($"Введите элемент массива №{i+1}: ");
+        array[i] = Convert.ToInt32(Console.ReadLine());
+    }
+    for (int i = 0; i < size; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+}
+
+Console.Write("Введите, сколько будет элементов в массиве: ");
+int sizeArray = Convert.ToInt32(Console.ReadLine());
+CreateArray(sizeArray);
