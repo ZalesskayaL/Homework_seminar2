@@ -1,5 +1,6 @@
 ﻿/*
-Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
+Задача 47. Задайте двумерный массив размером m×n, 
+заполненный случайными вещественными числами.
 
 m = 3, n = 4.
 
@@ -9,6 +10,40 @@ m = 3, n = 4.
 
 8 7,8 -7,1 9
 */
+double[,] CreateDoubleArray()
+{
+    Console.Write("Введите количество строк массива: ");
+    int rows = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите количество столбцов массива: ");
+    int columns = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите минимальное значение элементов массива: ");
+    int minValue = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите максимальное значение элементов массива: ");
+    int maxValue = Convert.ToInt32(Console.ReadLine());
+
+    double[,] array = new double[rows, columns];
+
+    for (int i = 0; i < rows; i++)
+        for (int j = 0; j < columns; j++)
+            array[i,j] = new Random().Next(minValue, maxValue + 1) + new Random().NextDouble();
+    
+    return array;
+}
+
+void ShowDoubleArray(double[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+            Console.Write(Math.Round(array[i,j], 2) + "\t");
+        
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+
+double [,] myArray = CreateDoubleArray();
+ShowDoubleArray(myArray);
 
 
 int[,] CreateRandom2dArray()
