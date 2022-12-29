@@ -118,11 +118,12 @@ int MinSumRow(int[,] array)
 
 }
 
+/*
 int[,] myArray = CreateRandom2dArray();
 Show2dArray(myArray);
 int minSumRow = MinSumRow(myArray) + 1;
 Console.Write("Номер строки с минимальной суммой: " + minSumRow);
-
+*/
 
 /*
 Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
@@ -133,6 +134,46 @@ Console.Write("Номер строки с минимальной суммой: "
 18 20
 15 18
 */
+
+int[,] ArrayMultiplication (int[,] arrayFirst, int[,] arraySecond)
+{
+    int[,] result = new int[arrayFirst.GetLength(0), arraySecond.GetLength(1)];
+    int temp = 0;
+    for (int i = 0; i < arrayFirst.GetLength(0); i++)
+    {
+        for (int b = 0; b < arraySecond.GetLength(1); b++)
+        {
+            temp = 0;
+            for (int j = 0, a = 0; j < arrayFirst.GetLength(1); j++, a++)
+            {
+                temp += arrayFirst[i,j] * arraySecond[a,b];
+            }
+            result[i,b] = temp;
+        }       
+    }
+        return result;
+    
+}
+/*
+Console.WriteLine("Матрица №1");
+int[,] myArrayFirst = CreateRandom2dArray();
+Show2dArray(myArrayFirst);
+Console.WriteLine("Матрица №2");
+int[,] myArraySecond = CreateRandom2dArray();
+Show2dArray(myArraySecond);
+
+if(myArrayFirst.GetLength(1) == myArraySecond.GetLength(0))
+{
+    int[,] resultArray = ArrayMultiplication(myArrayFirst, myArraySecond);
+    Console.WriteLine("Результат умножения матриц:");
+    Show2dArray(resultArray);
+}
+else
+{
+    Console.WriteLine("Ошибка: количество столбцов Матрицы №1 должно быть равно количеству строк Матрицы №2");
+}
+*/
+
 /*
 Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
 Массив размером 2 x 2 x 2
