@@ -182,6 +182,94 @@ else
 27(0,0,1) 90(0,1,1)
 26(1,0,1) 55(1,1,1)
 */
+
+void Show3DArray(int[,,] array)
+{
+    Console.WriteLine("Полученный массив:");
+    for (int x = 0; x < array.GetLength(0); x++)
+    {
+        for (int y = 0; y < array.GetLength(1); y++)
+        {
+            for (int z = 0; z < array.GetLength(2); z++)
+            {
+                Console.Write(array[x,y,z] + $"({x}, {y}, {z})" + "\t");
+            } 
+
+            Console.WriteLine();             
+        }
+        
+    }
+}
+
+bool SearchSame(int[,,] array, int x, int y, int z, int num)
+{
+    int n, l, m;
+    bool result = false;
+    
+    for (n = 0; result == false && n < array.GetLength(0); n++)
+    {
+        for (l = 0; result == false && l < array.GetLength(1); l++)
+        {
+            for (m = 0; result == false && m < array.GetLength(2); m++)
+            {
+                if(array[n,l,m] == num)
+                {
+                    result = true;
+                }                          
+            }
+        }
+                    
+    }
+    return result;
+}
+
+int[,,] Create3DArray(int x, int y, int z)
+{
+    
+    int min = 10;
+    int max = 99;
+    int[,,] newArray = new int[x,y,z];
+    bool search;
+
+    for (x = 0; x < newArray.GetLength(0); x++)
+    {
+        for (y = 0; y < newArray.GetLength(1); y++)
+        {
+            for (z = 0; z < newArray.GetLength(2); z++)
+            {
+                search = true;
+                int temp;
+                while (search == true)
+                {
+                    temp = new Random().Next(min,max);
+                    search = SearchSame(newArray, x, y, z, temp);
+                    newArray[x,y,z] = temp;
+                }
+                                    
+            }
+        }
+    }
+    return newArray;
+
+}
+
+/*
+Console.Write("Введите количество элементов массива по оси X: ");
+int i = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите количество элементов массива по оси Y: ");
+int j = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите количество элементов массива по оси Z: ");
+int h = Convert.ToInt32(Console.ReadLine());
+if(i * j * h <= 89)
+{
+    int[,,] new3DArray = Create3DArray(i, j, h);
+    Show3DArray(new3DArray);
+}
+else
+{
+    Console.Write("Нельзя создать массив такого размера с неповторяющимися двузначными числами");
+}
+*/
 /*
 Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
 Например, на выходе получается вот такой массив:
@@ -190,3 +278,91 @@ else
 11 16 15 06
 10 09 08 07
 */
+
+int[,] CreateSpiralArray()
+{
+    Console.Write("Введите количество строк массива: ");
+    int rows = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите количество столбцов массива: ");
+    int columns = Convert.ToInt32(Console.ReadLine());
+
+    int[,] array = new int[rows, columns];
+    int size = rows * columns;
+    int i = 0;
+    int j = 0;
+    int n = 0;
+    int count;
+    if(rows > 2 && columns > 2)
+    {
+        if(rows <= columns)
+        {
+            count = rows - 2;
+        }
+        else
+        {
+            count = columns - 2;
+        }
+    }
+    else
+    {
+        count = 1;
+    }
+    
+    int minI = 0;
+    int minJ = 0;
+    int maxI = array.GetLength(0) - 1;
+    int maxJ = array.GetLength(1) - 1;
+
+    while(count > 0)
+    {
+        Console.WriteLine("Цикл");
+        if(i == minI && j == minJ && n <= size)
+        {   
+            for(j = minJ, i = minI; j <= maxJ && n <= size; j++, n++)
+            {
+                array[i,j] = n;
+            }
+            minI++;
+            i = minI;
+            j = maxJ;
+        }
+        if(i == minI && j == maxJ && n < size)
+        {
+            for (i = minI, j = maxJ; i <= maxI && n <= size; i++, n++)
+            {
+                array[i,j] = n;
+            }
+            maxJ--;
+            i = maxI;
+            j = maxJ;
+        }
+        if(i == maxI && j == maxJ && n < size)
+        {
+            for (j = maxJ, i = maxI; j >= minJ && n < size; j--, n++)
+            {
+                array[i,j] = n;
+            }
+            maxI--;
+            i = maxI;
+            j = minJ;
+        }
+        if(i == maxI && j == minJ && n < size)
+        {
+            for (i = maxI, j = minJ; i >= minI && n < size; i--, n++)
+            {
+                array[i,j] = n;
+            }
+            minJ++;
+            i = minI;
+            j = minJ;
+        }   
+        count--;    
+        
+    }
+
+    
+    return array;
+}
+
+int[,] myArray = CreateSpiralArray();
+Show2dArray(myArray);
