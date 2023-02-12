@@ -1,0 +1,15 @@
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\Основы программирования\HW_4\Homework_seminar2\finalProject\obj\Debug\net6.0\finalProject.csproj.AssemblyReference.cache
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\Основы программирования\HW_4\Homework_seminar2\finalProject\obj\Debug\net6.0\finalProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\Основы программирования\HW_4\Homework_seminar2\finalProject\obj\Debug\net6.0\finalProject.AssemblyInfoInputs.cache
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\Основы программирования\HW_4\Homework_seminar2\finalProject\obj\Debug\net6.0\finalProject.AssemblyInfo.cs
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\Основы программирования\HW_4\Homework_seminar2\finalProject\obj\Debug\net6.0\finalProject.csproj.CoreCompileInputs.cache
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\Основы программирования\HW_4\Homework_seminar2\finalProject\bin\Debug\net6.0\finalProject.exe
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\Основы программирования\HW_4\Homework_seminar2\finalProject\bin\Debug\net6.0\finalProject.deps.json
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\Основы программирования\HW_4\Homework_seminar2\finalProject\bin\Debug\net6.0\finalProject.runtimeconfig.json
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\Основы программирования\HW_4\Homework_seminar2\finalProject\bin\Debug\net6.0\finalProject.dll
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\Основы программирования\HW_4\Homework_seminar2\finalProject\bin\Debug\net6.0\finalProject.pdb
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\Основы программирования\HW_4\Homework_seminar2\finalProject\obj\Debug\net6.0\finalProject.dll
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\Основы программирования\HW_4\Homework_seminar2\finalProject\obj\Debug\net6.0\refint\finalProject.dll
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\Основы программирования\HW_4\Homework_seminar2\finalProject\obj\Debug\net6.0\finalProject.pdb
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\Основы программирования\HW_4\Homework_seminar2\finalProject\obj\Debug\net6.0\finalProject.genruntimeconfig.cache
+C:\Users\alexp\OneDrive\Рабочий стол\Развитие\GeekBrains\Основы программирования\HW_4\Homework_seminar2\finalProject\obj\Debug\net6.0\ref\finalProject.dll
